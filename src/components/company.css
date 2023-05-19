@@ -1,0 +1,80 @@
+/* Define the style for the company page */
+.company-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f7fa; /* Light blue-grey background */
+  color: #17202a; /* Dark blue-grey text color */
+}
+
+.company-data {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1b4f72; /* Darker blue for heading */
+}
+
+.select-importance {
+  margin: 10px;
+  border-color: #17202a; /* Dark blue-grey border color */
+}
+
+.importance-number {
+  text-align: center;
+  border: 1px solid #bfc9ca; /* Medium blue-grey border color */
+  padding: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  color: #5986c9; /* Light blue-grey text color for contrast */
+}
+
+th {
+  background-color: #bfc9ca; /* Medium blue-grey background color */
+  border: 1px solid #bfc9ca;
+}
+
+td {
+  color: #2b3a4b;
+  border: 1px solid #bfc9ca;
+}
+/* Styles for the row containing the form and the button */
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  margin-bottom: 10px;
+}
+.company-data {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1b4f72;
+}
+
+.circle {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: #1b4f72;
+  border-radius: 50%;
+}
+
+.circle:first-child {
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.circle:last-child {
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}

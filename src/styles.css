@@ -1,0 +1,76 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+/* Set the display of the news container to grid */
+.news-container {
+  display: grid;
+}
+
+/* Set the grid columns and rows */
+.news-container {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 10px;
+}
+
+/* Set the grid gap */
+.news-container {
+  grid-gap: 10px;
+}
+
+/* Set the grid item span based on the content height */
+.news-card {
+  grid-row-end: span 10;
+}
+/* Set the default style of the news cards */
+.news-card {
+  width: 100%;
+}
+
+/* Change the style of the news cards for screen widths above 768px */
+@media only screen and (min-width: 768px) {
+  .news-card {
+    width: 50%;
+    float: left;
+  }
+}
+a {
+  color: hotpink;
+}
+/* Style the menu container */
+.menu {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+  display: flex;
+  /* Use justify-content property to center the items in the menu */
+  justify-content: center;
+}
+
+/* Style the menu links */
+.menu a {
+  float: left; /* Align links horizontally */
+  display: block; /* Make links take up the whole space */
+  color: white; /* White text color */
+  text-align: center; /* Center text alignment */
+  padding: 14px 16px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Change the color of links on hover */
+.menu a:hover {
+  background-color: #111; /* Darker background color */
+}
+.title-brand {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(236, 179, 92);
+  background-color: #242424;
+  padding: 10px;
+  margin: 0px;
+  /* Use text-align property to center the text */
+  text-align: center;
+}
+body {
+  margin: 0px;
+}
